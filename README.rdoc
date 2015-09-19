@@ -10,5 +10,4 @@ create MySql user `bank` with password `bank`
 ```
 bundle exec rspec spec
 ```
-
 * For application business logic check lib directory `TransactionAgent` and `TransactionManager`
