@@ -17,7 +17,7 @@ describe TransferManager do
       end
 
       it "executes intra-bank transfer" do
-        expect(Transfers::Inter).to receive(:execute)
+        expect(Transfers::Intra).to receive(:execute)
 
         TransferManager.execute_transfer(account_number_1, account_number_2, transfering_amount)
       end
@@ -35,7 +35,7 @@ describe TransferManager do
       end
 
       it "executes inter-bank transfer" do
-        expect(Transfers::Intra).to receive(:execute)
+        expect(Transfers::Inter).to receive(:execute)
 
         TransferManager.execute_transfer(account_number_1, account_number_2, transfering_amount)
       end

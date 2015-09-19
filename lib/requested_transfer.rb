@@ -10,4 +10,16 @@ class RequestedTransfer
   def same_bank?
     @from_account.bank_id == @to_account.bank_id
   end
+
+  def from_account
+    @from_account
+  end
+
+  def to_account
+    @to_account
+  end
+
+  def transfering_amount
+    @transfering_amount
+  end
 end
