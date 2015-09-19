@@ -1,8 +1,5 @@
 module Transfers
   class Inter < AccountTransfer
-    MAX_TRANSFERING_AMOUNT = 1000
-    COMMISSION = 5
-
     def self.execute(requested_transfer)
       check_transfering_amount(requested_transfer)
       perfrom_transfer(requested_transfer)

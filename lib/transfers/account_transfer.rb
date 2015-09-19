@@ -1,5 +1,8 @@
 module Transfers
   class AccountTransfer
+    MAX_TRANSFERING_AMOUNT = 1000
+    COMMISSION = 5
+
     def self.create_transfer(requested_transfer)
       Transfer.create(
         :transfer_type => "intra", 
