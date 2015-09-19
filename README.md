@@ -1,5 +1,3 @@
-== README
-
 * Database creation
 
 create MySql user `bank` with password `bank`
