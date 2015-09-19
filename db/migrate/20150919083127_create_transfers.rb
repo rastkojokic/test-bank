@@ -1,6 +1,6 @@
-class CreateTansfers < ActiveRecord::Migration
+class CreateTransfers < ActiveRecord::Migration
   def change
-    create_table :tansfers do |t|
+    create_table :transfers do |t|
       t.decimal :amount
       t.string :type
 
